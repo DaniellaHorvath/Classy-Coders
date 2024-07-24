@@ -31,13 +31,13 @@ setStatus(command){
       
    }
 }
-const preston = new Employees("Preston", "Engineer", 100000);
-console.log(preston.getSalary()); // 100000
-console.log(preston.setSalary(105000));
-console.log(preston.getSalary()); // 105000
-console.log(preston.getStatus()); // true;
-console.log(preston.setStatus("fire"));
-console.log(preston.getStatus()); // false;
+// const preston = new Employees("Preston", "Engineer", 100000);
+// console.log(preston.getSalary()); // 100000
+// console.log(preston.setSalary(105000));
+// console.log(preston.getSalary()); // 105000
+// console.log(preston.getStatus()); // true;
+// console.log(preston.setStatus("fire"));
+// console.log(preston.getStatus()); // false;
     
 
 
