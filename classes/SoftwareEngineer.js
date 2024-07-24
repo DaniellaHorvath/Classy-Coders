@@ -17,15 +17,15 @@ class SoftwareEngineer extends Employees {
   }
 }
 
-const programmer = new SoftwareEngineer(
-  "Becca",
-  "Senior Software Engineer",
-  100000,
-  ["JavaScript", "Java", "Python"]
-);
-console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python"]
-programmer.setProgrammingLanguages("C#");
-console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python", "C#"]
+// const programmer = new SoftwareEngineer(
+//   "Becca",
+//   "Senior Software Engineer",
+//   100000,
+//   ["JavaScript", "Java", "Python"]
+// );
+// console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python"]
+// programmer.setProgrammingLanguages("C#");
+// console.log(programmer.getProgrammingLanguages()); // ["JavaScript", "Java", "Python", "C#"]
 
 module.exports = {
   SoftwareEngineer,
