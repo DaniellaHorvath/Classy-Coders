@@ -17,7 +17,7 @@ describe("Employees tests without static methods", () => {
 
   test("Can update salary", () => {
     preston.setSalary(105000);
-    expect(preston.getSalary()).toBe(205000);
+    expect(preston.getSalary()).toBe(105000);
   });
 
   test("Can get current isHired status", () => {

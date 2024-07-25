@@ -25,7 +25,8 @@ class Employees {
   }
 
   setSalary(amount) {
-    this.#salary += amount;
+    Employees.#totalSalaries += amount - this.#salary;
+    this.#salary = amount;
   }
 
   getStatus() {
