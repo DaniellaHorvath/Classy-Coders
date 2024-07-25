@@ -8,7 +8,8 @@ class Employees {
     this.name = name;
     this.position = position;
     this.#salary = salary;
-    Employees.#allEmployees.push(this, salary);
+    Employees.#totalSalaries += salary;
+    Employees.#allEmployees.push(this);
   }
 
   static getEmployees() {
@@ -16,14 +17,7 @@ class Employees {
   }
 
   static getTotalPayroll() {
-    // console.log(Employees.#allEmployees.salary);
-    for (let i = 0; i < Employees.#allEmployees.length; i++) {
-      let currentEmployeeSalary = Employees.#allEmployees[i];
-      console.log("HERE:", currentEmployeeSalary);
-      Employees.#totalSalaries += Number(currentEmployeeSalary);
-    }
-
-    return Employees.#totalSalaries;
+    return this.#totalSalaries;
   }
 
   getSalary() {
@@ -31,7 +25,8 @@ class Employees {
   }
 
   setSalary(amount) {
-    this.#salary += amount;
+    Employees.#totalSalaries += amount - this.#salary;
+    this.#salary = amount;
   }
 
   getStatus() {
@@ -47,6 +42,7 @@ class Employees {
     }
   }
 }
+
 // const preston = new Employees("Preston", "Engineer", 100000);
 // console.log(preston);
 // console.log(preston.getSalary()); // 100000
