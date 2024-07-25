@@ -25,7 +25,7 @@ const { SoftwareEngineer } = require("./classes/SoftwareEngineer");
 // ]);
 
 // console.log(Employees.getEmployees()); // [ Manager { }, SoftwareEngineer { }, SalesPerson { }]
-// console.log(Employees.getTotalSalary()); // 310000
+// console.log(Employees.getTotalPayroll()); // 310000
 
 module.exports = {
   Employees,
